@@ -74,12 +74,8 @@ The surge of reported hate crime rates, with its connections with oppression and
 
 | Data file name | Purpose                                                                                                                                                                                                                                                                                           | Number of observations | Number of variables | Citations                                                                                                     | URL                                                          |
 |------------|------------|------------|------------|------------|------------|
-<<<<<<< HEAD
 | hate_crime.csv | The purpose of this dataset is to help law enforcement address issues for communities, provide policymakers with justification for legislation, supply the media with credible information, show hate crime victims they are not alone, and help researchers in determining trends in hate crimes | 219577                 | 28                  | Learn about hate crimes. The United States Department of Justice. (2022, June 16). Retrieved October 29, 2022 | <https://www.justice.gov/hatecrimes/learn-about-hate-crimes> |
-=======
-| Hate crime data | The purpose of this dataset is to help law enforcement address issues for communities, provide policymakers with justification for legislation, supply the media with credible information, show hate crime victims they are not alone, and help researchers in determining trends in hate crimes | 219577                 | 28                  | Learn about hate crimes. The United States Department of Justice. (2022, June 16). Retrieved October 29, 2022 | <https://www.justice.gov/hatecrimes/learn-about-hate-crimes> |
 | Arrests by state 2020 | The purpose of this dataset is to hopefully show that the people who committed the hate crimes in 2020 got arrested, we can use the forms of attack (vandalism, assualt, arson, etc.) and the state to cross examine if they got arrested in each state | 102 (2 for each state including D.C)                | 35                  | FBI. (n.d.). Federal Bureau of Investigation Crime Data Explorer. Crime. Retrieved October 31, 2022  | <https://crime-data-explorer.app.cloud.gov/pages/explorer/crime/arrest> |
->>>>>>> e11dfb383c8aa1eaf2a89fb0725129b1b4b59a2f
 
 -   This dataset is from the FBI's Uniform Crime Reporting (UCR) Program. In this program, law enforcements from across the US can submit data about hate crimes. This dataset includes a column causes and motivations for each hate crime data. For example, causes and motivations may include "anti-black" or "anti-religious" reasons. This column can also help us understand whether or not certain laws in different states may prevent specific hate crimes, such as "anti-blackness", or raically motivated hate crimees, and "anti-hispanic", or ethnic hate crimes. Additonally, the demographics of the perpetrator and the victims are recorded per hate crime, which can help answer if minority populations are related to the hate crimes in some way. Additonally, it may help answer whether or not the crime rates relate to political party affiliatons.
 
@@ -88,9 +84,9 @@ The surge of reported hate crime rates, with its connections with oppression and
 (grading rubric) You list two expected implications - that is, findings from your investigation that might be help us understand the natural or built environments or might be used by other stakeholders (policymakers, designers, scientists, etc.)\
 \* For each implication, you discuss the implication\
 
-- The first expected implication is that
+- One expected implication is that our investigation into hate crimes has found that hate crimes rarely ever get prosecuted, which implies that there isn’t a good way of defining what is and isn’t a hate crime, this information could help the process of making laws that help define hate crime and help prosecute people who commit hate crimes.
 
-- The second expected implication is that
+- Another expected implication is that our investigation into hate crimes has found that the amount of hate crimes committed/documented in each state is vastly different, for example, California has documented tens of thousands of hate crimes while Texas has reported around 9-8 thousand, this information could help implement a law that has each state define hate crime equally, instead of having an unequal definition in each state leading to a very differed amount of documented hate crimes.
 
 ## Limitations
 
