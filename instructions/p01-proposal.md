@@ -27,8 +27,11 @@ Hate crime rates have experienced an increase over the past few years. We will b
 
 ## Problem Domain
 
-**Hate crime** is defined by the United States Department of Justice (2022) as "At the federal level, a crime motivated by bias against race, color, religion, national origin, sexual orientation, gender, gender identity, or disability". The occurrences on hate crime have increased in recent years; 2020 had the highest record for reported hate crimes since 2008 (Arango, 2020). The Southern Poverty Law Center (2020) also mentions that"It's important to note that, because of the nature of hate crime reporting, the FBI's annual report vastly understates the real level of hate crimes in the country." TRAC Reports (2019) also gives us a broader view of the issue, with only 4 hate crimes filed for prosecution in 2019.\
-The surge of reported hate crime rates, combined with the underlying issue of understated report counts, tells us that hate crimes might be an underestimated problem in the U.S.
+**Hate crime** is defined by the United States Department of Justice (2022) as "At the federal level, a crime motivated by bias against race, color, religion, national origin, sexual orientation, gender, gender identity, or disability". The occurrences on hate crime have increased in recent years; 2020 had the highest record for reported hate crimes since 2008 (Arango, 2020).
+
+Racism, which lies as one of the biggest superficial causes in hate crimes, correlates with political party affiliations of the general public; the statistical report from YouGov (2022) indicates that 81% of Democrats believe racism is a current problem that affects people of color, while only 28% of Republicans believe so. \
+\
+The surge of reported hate crime rates, with its connections with oppression and political beliefs of the public, tells us that hate crimes are becoming a serious problem in the U.S. and that it might relate to and correspond with other factors such as political beliefs.
 
 #### Human Values
 
@@ -56,18 +59,22 @@ The surge of reported hate crime rates, combined with the underlying issue of un
 
 ## Research Questions
 
-1.  What are the causes and motivations behind hate crimes?
-2.  How are hate crimes punishable across different states?
-3.  Do minority populations affect hate crimes in an area?
-4.  How does the political party affiliation correspond with crime rates?
+-   What are the causes and motivations behind hate crimes?
+    -   It is important to address this question because identifying the root cause behind hate crimes is crucial to solving the problem itself. We hope that we acquire more knowledge on the root cause for a more intricate analysis that addresses intersectionality as a whole, contributing to the community as advocates of data feminism.
+-   How are hate crimes punishable across different states?
+    -   This question is important because we believe the outcomes of hate crimes will have an impact on hate crime rates. We wish to know if any states are more lenient or strict on hate crime punishments, and how it would affect hate crime rates by state.
+-   Do minority populations affect hate crimes in an area?
+    -   We wish to know if a larger minority population by state mitigates or exacerbates hate crime occurrences. This question is important because an analysis of hate crime occurrences by minority populations in different areas will inform stakeholders of their safety depending on location.
+-   How does the political party affiliation by state correspond with crime rates?
+    -   As we believe that political party affiliation has a connection to oppression that is happening in the U.S., we wish to know which states tend to advocate for a certain party and whether it affects changes in crime rates. With this analysis, stakeholders would be informed of any distinctions and will be prompted to make an action.
 
 ## The Dataset
 
 -   Table:
 
-| Data file name  | Purpose                                                                                                                                                                                                                                                                                           | Number of observations | Number of variables | Citations                                                                                                     | URL                                                          |
+| Data file name | Purpose                                                                                                                                                                                                                                                                                           | Number of observations | Number of variables | Citations                                                                                                     | URL                                                          |
 |------------|------------|------------|------------|------------|------------|
-| Hate crime data | The purpose of this dataset is to help law enforcement address issues for communities, provide policymakers with justification for legislation, supply the media with credible information, show hate crime victims they are not alone, and help researchers in determining trends in hate crimes | 219577                 | 28                  | Learn about hate crimes. The United States Department of Justice. (2022, June 16). Retrieved October 29, 2022 | <https://www.justice.gov/hatecrimes/learn-about-hate-crimes> |
+| hate_crime.csv | The purpose of this dataset is to help law enforcement address issues for communities, provide policymakers with justification for legislation, supply the media with credible information, show hate crime victims they are not alone, and help researchers in determining trends in hate crimes | 219577                 | 28                  | Learn about hate crimes. The United States Department of Justice. (2022, June 16). Retrieved October 29, 2022 | <https://www.justice.gov/hatecrimes/learn-about-hate-crimes> |
 
 -   This dataset is from the FBI's Uniform Crime Reporting (UCR) Program. In this program, law enforcements from across the US can submit data about hate crimes. This dataset includes a column causes and motivations for each hate crime data. For example, causes and motivations may include "anti-black" or "anti-religious" reasons. This column can also help us understand whether or not certain laws in different states may prevent specific hate crimes, such as "anti-blackness", or raically motivated hate crimees, and "anti-hispanic", or ethnic hate crimes. Additonally, the demographics of the perpetrator and the victims are recorded per hate crime, which can help answer if minority populations are related to the hate crimes in some way. Additonally, it may help answer whether or not the crime rates relate to political party affiliatons.
 
@@ -93,6 +100,6 @@ Arango, T. (2020, November 16). *Hate crimes in U.S. rose to highest level in m
 
 *Learn about hate crimes*. The United States Department of Justice. (2022, June 16). Retrieved October 29, 2022, from <https://www.justice.gov/hatecrimes/learn-about-hate-crimes> 
 
-TRAC Reports, Inc. (2019, August 12). *Few federal hate crime referrals result in prosecution*. TRAC Reports. Retrieved October 29, 2022, from <https://trac.syr.edu/tracreports/crim/569/> 
+YouGov. (2022, September 30). *Racism: Opinions of adults on current state by party U.S. 2020*. Statista. Retrieved October 31, 2022, from <https://www.statista.com/statistics/1131594/opinions-us-adults-current-state-racism-political-party/> 
 
 ### Appendix A: Questions
