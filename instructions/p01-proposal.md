@@ -74,7 +74,12 @@ The surge of reported hate crime rates, with its connections with oppression and
 
 | Data file name | Purpose                                                                                                                                                                                                                                                                                           | Number of observations | Number of variables | Citations                                                                                                     | URL                                                          |
 |------------|------------|------------|------------|------------|------------|
+<<<<<<< HEAD
 | hate_crime.csv | The purpose of this dataset is to help law enforcement address issues for communities, provide policymakers with justification for legislation, supply the media with credible information, show hate crime victims they are not alone, and help researchers in determining trends in hate crimes | 219577                 | 28                  | Learn about hate crimes. The United States Department of Justice. (2022, June 16). Retrieved October 29, 2022 | <https://www.justice.gov/hatecrimes/learn-about-hate-crimes> |
+=======
+| Hate crime data | The purpose of this dataset is to help law enforcement address issues for communities, provide policymakers with justification for legislation, supply the media with credible information, show hate crime victims they are not alone, and help researchers in determining trends in hate crimes | 219577                 | 28                  | Learn about hate crimes. The United States Department of Justice. (2022, June 16). Retrieved October 29, 2022 | <https://www.justice.gov/hatecrimes/learn-about-hate-crimes> |
+| Arrests by state 2020 | The purpose of this dataset is to hopefully show that the people who committed the hate crimes in 2020 got arrested, we can use the forms of attack (vandalism, assualt, arson, etc.) and the state to cross examine if they got arrested in each state | 102 (2 for each state including D.C)                | 35                  | FBI. (n.d.). Federal Bureau of Investigation Crime Data Explorer. Crime. Retrieved October 31, 2022  | <https://crime-data-explorer.app.cloud.gov/pages/explorer/crime/arrest> |
+>>>>>>> e11dfb383c8aa1eaf2a89fb0725129b1b4b59a2f
 
 -   This dataset is from the FBI's Uniform Crime Reporting (UCR) Program. In this program, law enforcements from across the US can submit data about hate crimes. This dataset includes a column causes and motivations for each hate crime data. For example, causes and motivations may include "anti-black" or "anti-religious" reasons. This column can also help us understand whether or not certain laws in different states may prevent specific hate crimes, such as "anti-blackness", or raically motivated hate crimees, and "anti-hispanic", or ethnic hate crimes. Additonally, the demographics of the perpetrator and the victims are recorded per hate crime, which can help answer if minority populations are related to the hate crimes in some way. Additonally, it may help answer whether or not the crime rates relate to political party affiliatons.
 
@@ -83,14 +88,19 @@ The surge of reported hate crime rates, with its connections with oppression and
 (grading rubric) You list two expected implications - that is, findings from your investigation that might be help us understand the natural or built environments or might be used by other stakeholders (policymakers, designers, scientists, etc.)\
 \* For each implication, you discuss the implication\
 
+- The first expected implication is that
+
+- The second expected implication is that
+
 ## Limitations
 
-(grading rubric) \* You list two possible limitations\
-\* You discuss each limitation and how you might address the limitation\
+- The first limitation that we have is we can't see exactly what they did in terms of the crimes they committed, we have the general crime, but we can't see if they punched someone, hit them with a bat, shoved them, lit their house on fire, etc. To address the limitation we are going to take either the best case or worst case scenarios, or just worry about the general crime they committed and not worry about what they actually did.
 
+- The second limitation that we have is that we can't directly see if the person who committed the hate crime got arrested and the only chart of arrests we have that lines up with the other charts years is for 2020. To address this limitation we are going to take the number of each crime and the number of each arrest for said crime and try to make an educated guess on the percentage of people who actually got arrested.
 ------------------------------------------------------------------------
 
 ### Acknowledgements
+We would like to thank ----
 
 ### References (APA 7)
 
