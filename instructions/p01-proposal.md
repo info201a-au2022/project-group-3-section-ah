@@ -56,18 +56,22 @@ The surge of reported hate crime rates, combined with the underlying issue of un
 
 ## Research Questions
 
-(grading rubric) \* Each of your research questions is presented in the form of a question\
-\* Each research question seems tractable and answerable - and is concise and clear and free of jargon\
-\* Each question is briefly discussed; you explain why the question is important and how it is connected to the problem domain\
+1. What are the causes and motivations behind hate crimes?
+2. How are hate crimes punishable across different states?
+3. Do minority populations affect hate crimes in an area?
+4. How does the political party affiliation correspond with crime rates?
+
 
 ## The Dataset
 
-(grading rubric) *You use short sub-sections to describe your dataset\
-* You include a table that summarizes your data set (data file name; purpose; number of observations; number of variables; citation, including URL)\
-\* You describe how your dataset enables you to answer your research questions\
-\* You describe the provenance of your dataset
+- Table:
 
-(note by Jiyoon) might be good idea to introduce population demographic data / political party affiliation by state data / gun violence in america data / federal prosecution of hate crimes data\
+| Data file name | Purpose | Number of observations | Number of variables | Citations | URL |
+|---|---|---|---|---|---|
+| Hate crime data | The purpose of this dataset is to help law enforcement address issues for communities, provide policymakers with justification for legislation, supply the media with credible information, show hate crime victims they are not alone, and help researchers in determining trends in hate crimes | 219577 | 28 | Learn about hate crimes. The United States Department of Justice. (2022, June 16). Retrieved October 29, 2022 | https://www.justice.gov/hatecrimes/learn-about-hate-crimes |
+
+
+- This dataset is from the FBI's Uniform Crime Reporting (UCR) Program. In this program, law enforcements from across the US can submit data about hate crimes. This dataset includes a column causes and motivations for each hate crime data. For example, causes and motivations may include "anti-black" or "anti-religious" reasons. This column can also help us understand whether or not certain laws in different states may prevent specific hate crimes, such as "anti-blackness", or raically motivated hate crimees, and "anti-hispanic", or ethnic hate crimes. Additonally, the demographics of the perpetrator and the victims are recorded per hate crime, which can help answer if minority populations are related to the hate crimes in some way. Additonally, it may help answer whether or not the crime rates relate to political party affiliatons.
 
 ## Expected Implications
 
