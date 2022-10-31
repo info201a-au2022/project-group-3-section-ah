@@ -81,12 +81,10 @@ The surge of reported hate crime rates, with its connections with oppression and
 
 ## Expected Implications
 
-(grading rubric) You list two expected implications - that is, findings from your investigation that might be help us understand the natural or built environments or might be used by other stakeholders (policymakers, designers, scientists, etc.)\
-\* For each implication, you discuss the implication\
-
 - One expected implication is that our investigation into hate crimes has found that hate crimes rarely ever get prosecuted, which implies that there isn’t a good way of defining what is and isn’t a hate crime, this information could help the process of making laws that help define hate crime and help prosecute people who commit hate crimes.
 
 - Another expected implication is that our investigation into hate crimes has found that the amount of hate crimes committed/documented in each state is vastly different, for example, California has documented tens of thousands of hate crimes while Texas has reported around 9-8 thousand, this information could help implement a law that has each state define hate crime equally, instead of having an unequal definition in each state leading to a very differed amount of documented hate crimes.
+
 
 ## Limitations
 
