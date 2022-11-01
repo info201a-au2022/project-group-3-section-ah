@@ -5,7 +5,7 @@ In our project, we use the following data files and Application Programming Inte
 ## Data files (TODO: Update/delete for your PROJECT)
 
 | Data File Name                     | Brief Description                                                          |
-|----------------------------------|--------------------------------------|
+|------------------------------------|----------------------------------------------------------------------------|
 | [hate_crime.csv](./hate_crime.csv) | This file contains hate crime data frrom 1991 to 2020, retrieved from FBI. |
 | [Table_69_Arrest_by_State_2020.csv](./Table_69_Arrest_by_State_2020.csv) | This file contains All the arrests by crime in each state, retrieved from FBI. |
 ## Application Programming Interfaces (API) (TODO: Update/delete for your PROJECT)

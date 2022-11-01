@@ -59,13 +59,13 @@ The surge of reported hate crime rates, with its connections with oppression and
 
 ## Research Questions
 
--   What are the causes and motivations behind hate crimes?
+-   **What are the causes and motivations behind hate crimes?**
     -   It is important to address this question because identifying the root cause behind hate crimes is crucial to solving the problem itself. We hope that we acquire more knowledge on the root cause for a more intricate analysis that addresses intersectionality as a whole, contributing to the community as advocates of data feminism.
--   How are hate crimes punishable across different states?
+-   **How are hate crimes punishable across different states?**
     -   This question is important because we believe the outcomes of hate crimes will have an impact on hate crime rates. We wish to know if any states are more lenient or strict on hate crime punishments, and how it would affect hate crime rates by state.
--   Do minority populations affect hate crimes in an area?
+-   **Do minority populations affect hate crimes in an area?**
     -   We wish to know if a larger minority population by state mitigates or exacerbates hate crime occurrences. This question is important because an analysis of hate crime occurrences by minority populations in different areas will inform stakeholders of their safety depending on location.
--   How does the political party affiliation by state correspond with crime rates?
+-   **How does the political party affiliation by state correspond with crime rates?**
     -   As we believe that political party affiliation has a connection to oppression that is happening in the U.S., we wish to know which states tend to advocate for a certain party and whether it affects changes in crime rates. With this analysis, stakeholders would be informed of any distinctions and will be prompted to make an action.
 
 ## The Dataset
@@ -73,7 +73,7 @@ The surge of reported hate crime rates, with its connections with oppression and
 -   Table:
 
 | Data file name        | Purpose                                                                                                                                                                                                                                                                                           | Number of observations               | Number of variables | Citations                                                                                                     | URL                                                                     |
-|------------|------------|------------|------------|------------|------------|
+|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|---------------------|---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | hate_crime.csv        | The purpose of this dataset is to help law enforcement address issues for communities, provide policymakers with justification for legislation, supply the media with credible information, show hate crime victims they are not alone, and help researchers in determining trends in hate crimes | 219577                               | 28                  | Learn about hate crimes. The United States Department of Justice. (2022, June 16). Retrieved October 29, 2022 | <https://www.justice.gov/hatecrimes/learn-about-hate-crimes>            |
 | Arrests by state 2020 | The purpose of this dataset is to hopefully show that the people who committed the hate crimes in 2020 got arrested, we can use the forms of attack (vandalism, assualt, arson, etc.) and the state to cross examine if they got arrested in each state                                           | 102 (2 for each state including D.C) | 35                  | FBI. (n.d.). Federal Bureau of Investigation Crime Data Explorer. Crime. Retrieved October 31, 2022           | <https://crime-data-explorer.app.cloud.gov/pages/explorer/crime/arrest> |
 | Political Party | The purpose of this dataset is to show the voting outcomes for different US presidential candidates from the years 1976-2020. The dataset allows us to see which political parties were most favored in different states.                                           | 4288 | 15                 | U.S President 1976-2020. Harvard Dataverse. (n.d.). Retrieved October 31, 2022           | <https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/42MVDX> |
