@@ -29,7 +29,7 @@ Hate crime rates have experienced an increase over the past few years. We will b
 
 **Hate crime** is defined by the United States Department of Justice (2022) as "At the federal level, a crime motivated by bias against race, color, religion, national origin, sexual orientation, gender, gender identity, or disability". The occurrences on hate crime have increased in recent years; 2020 had the highest record for reported hate crimes since 2008 (Arango, 2020).
 
-Racism, which lies as one of the biggest superficial causes in hate crimes, correlates with political party affiliations of the general public; the statistical report from YouGov (2022) indicates that 81% of Democrats believe racism is a current problem that affects people of color, while only 28% of Republicans believe so. \
+Racism, which lies as one of the biggest superficial causes in hate crimes, correlates with political party affiliations of the general public; the statistical report from YouGov (2022) indicates that 81% of Democrats believe racism is a current problem that affects people of color, while only 28% of Republicans believe so.\
 \
 The surge of reported hate crime rates, with its connections with oppression and political beliefs of the public, tells us that hate crimes are becoming a serious problem in the U.S. and that it might relate to and correspond with other factors such as political beliefs.
 
@@ -44,7 +44,7 @@ The surge of reported hate crime rates, with its connections with oppression and
 
     -   *Jews and Jewish institutions* are targets of hate crimes as well, and reported crime rates have increased by 14% (Southern Poverty Law Center, 2020). Their sense of security and well-being is also impacted.
 
-    -   *LGBTQ people* are also affected, especially the transgender community, with an 18% increase; the highest rate since 2013, which was when the FBI started to collect this data (Southern Poverty Law Center, 2020). Their sense of security and well-being is impacted as well. \
+    -   *LGBTQ people* are also affected, especially the transgender community, with an 18% increase; the highest rate since 2013, which was when the FBI started to collect this data (Southern Poverty Law Center, 2020). Their sense of security and well-being is impacted as well.\
 -   **Indirect Stakeholders**
     -   *The U.S. federal government* examine changes in crime rates and make action, propose changes in the social system for their citizens to feel comfortable.
 
@@ -72,28 +72,27 @@ The surge of reported hate crime rates, with its connections with oppression and
 
 -   Table:
 
-| Data file name | Purpose                                                                                                                                                                                                                                                                                           | Number of observations | Number of variables | Citations                                                                                                     | URL                                                          |
+| Data file name        | Purpose                                                                                                                                                                                                                                                                                           | Number of observations               | Number of variables | Citations                                                                                                     | URL                                                                     |
 |------------|------------|------------|------------|------------|------------|
-| hate_crime.csv | The purpose of this dataset is to help law enforcement address issues for communities, provide policymakers with justification for legislation, supply the media with credible information, show hate crime victims they are not alone, and help researchers in determining trends in hate crimes | 219577                 | 28                  | Learn about hate crimes. The United States Department of Justice. (2022, June 16). Retrieved October 29, 2022 | <https://www.justice.gov/hatecrimes/learn-about-hate-crimes> |
-| Arrests by state 2020 | The purpose of this dataset is to hopefully show that the people who committed the hate crimes in 2020 got arrested, we can use the forms of attack (vandalism, assualt, arson, etc.) and the state to cross examine if they got arrested in each state | 102 (2 for each state including D.C)                | 35                  | FBI. (n.d.). Federal Bureau of Investigation Crime Data Explorer. Crime. Retrieved October 31, 2022  | <https://crime-data-explorer.app.cloud.gov/pages/explorer/crime/arrest> |
+| hate_crime.csv        | The purpose of this dataset is to help law enforcement address issues for communities, provide policymakers with justification for legislation, supply the media with credible information, show hate crime victims they are not alone, and help researchers in determining trends in hate crimes | 219577                               | 28                  | Learn about hate crimes. The United States Department of Justice. (2022, June 16). Retrieved October 29, 2022 | <https://www.justice.gov/hatecrimes/learn-about-hate-crimes>            |
+| Arrests by state 2020 | The purpose of this dataset is to hopefully show that the people who committed the hate crimes in 2020 got arrested, we can use the forms of attack (vandalism, assualt, arson, etc.) and the state to cross examine if they got arrested in each state                                           | 102 (2 for each state including D.C) | 35                  | FBI. (n.d.). Federal Bureau of Investigation Crime Data Explorer. Crime. Retrieved October 31, 2022           | <https://crime-data-explorer.app.cloud.gov/pages/explorer/crime/arrest> |
 
 -   This dataset is from the FBI's Uniform Crime Reporting (UCR) Program. In this program, law enforcements from across the US can submit data about hate crimes. This dataset includes a column causes and motivations for each hate crime data. For example, causes and motivations may include "anti-black" or "anti-religious" reasons. This column can also help us understand whether or not certain laws in different states may prevent specific hate crimes, such as "anti-blackness", or raically motivated hate crimees, and "anti-hispanic", or ethnic hate crimes. Additonally, the demographics of the perpetrator and the victims are recorded per hate crime, which can help answer if minority populations are related to the hate crimes in some way. Additonally, it may help answer whether or not the crime rates relate to political party affiliatons.
 
 ## Expected Implications
 
-- One expected implication is that our investigation into hate crimes has found that hate crimes rarely ever get prosecuted, which implies that there isn’t a good way of defining what is and isn’t a hate crime, this information could help the process of making laws that help define hate crime and help prosecute people who commit hate crimes.
+-   One expected implication is that our investigation into hate crimes has found that hate crimes rarely ever get prosecuted, which implies that there isn't a good way of defining what is and isn't a hate crime, this information could help the process of making laws that help define hate crime and help prosecute people who commit hate crimes.
 
-- Another expected implication is that our investigation into hate crimes has found that the amount of hate crimes committed/documented in each state is vastly different, for example, California has documented tens of thousands of hate crimes while Texas has reported around 9-8 thousand, this information could help implement a law that has each state define hate crime equally, instead of having an unequal definition in each state leading to a very differed amount of documented hate crimes.
-
+-   Another expected implication is that our investigation into hate crimes has found that the amount of hate crimes committed/documented in each state is vastly different, for example, California has documented tens of thousands of hate crimes while Texas has reported around 9-8 thousand, this information could help implement a law that has each state define hate crime equally, instead of having an unequal definition in each state leading to a very differed amount of documented hate crimes.
 
 ## Limitations
 
-- The first limitation that we have is we can't see exactly what they did in terms of the crimes they committed, we have the general crime, but we can't see if they punched someone, hit them with a bat, shoved them, lit their house on fire, etc. To address the limitation we are going to take either the best case or worst case scenarios, or just worry about the general crime they committed and not worry about what they actually did.
+-   The first limitation that we have is we can't see exactly what they did in terms of the crimes they committed, we have the general crime, but we can't see if they punched someone, hit them with a bat, shoved them, lit their house on fire, etc. To address the limitation we are going to take either the best case or worst case scenarios, or just worry about the general crime they committed and not worry about what they actually did.
 
-- The second limitation that we have is that we can't directly see if the person who committed the hate crime got arrested and the only chart of arrests we have that lines up with the other charts years is for 2020. To address this limitation we are going to take the number of each crime and the number of each arrest for said crime and try to make an educated guess on the percentage of people who actually got arrested.
-------------------------------------------------------------------------
+-   The second limitation that we have is that we can't directly see if the person who committed the hate crime got arrested and the only chart of arrests we have that lines up with the other charts years is for 2020. To address this limitation we are going to take the number of each crime and the number of each arrest for said crime and try to make an educated guess on the percentage of people who actually got arrested.
 
 ### Acknowledgements
+
 We would like to thank ----
 
 ### References (APA 7)
