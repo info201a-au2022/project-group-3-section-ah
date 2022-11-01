@@ -7,7 +7,7 @@
 **Authors**\
 Jiyoon Kim \| jiyoon99\@uw.edu\
 Qiqi Liang \|\
-Michael Cinnamon \|\
+Michael Cinnamon \| cinnammj@uw.edu\
 \
 **Affiliation**\
 INFO-201: Foundational Skills For Data Science - The Information School - University of Washington\
@@ -78,6 +78,8 @@ The surge of reported hate crime rates, with its connections with oppression and
 | Arrests by state 2020 | The purpose of this dataset is to hopefully show that the people who committed the hate crimes in 2020 got arrested, we can use the forms of attack (vandalism, assualt, arson, etc.) and the state to cross examine if they got arrested in each state                                           | 102 (2 for each state including D.C) | 35                  | FBI. (n.d.). Federal Bureau of Investigation Crime Data Explorer. Crime. Retrieved October 31, 2022           | <https://crime-data-explorer.app.cloud.gov/pages/explorer/crime/arrest> |
 
 -   This dataset is from the FBI's Uniform Crime Reporting (UCR) Program. In this program, law enforcements from across the US can submit data about hate crimes. This dataset includes a column causes and motivations for each hate crime data. For example, causes and motivations may include "anti-black" or "anti-religious" reasons. This column can also help us understand whether or not certain laws in different states may prevent specific hate crimes, such as "anti-blackness", or raically motivated hate crimees, and "anti-hispanic", or ethnic hate crimes. Additonally, the demographics of the perpetrator and the victims are recorded per hate crime, which can help answer if minority populations are related to the hate crimes in some way. Additonally, it may help answer whether or not the crime rates relate to political party affiliatons.
+
+-   The arrests by state dataset are related to our problem domain and specifically the research questions because it can show us how hate crimes are punished on a state-by-state basis. We can see how many people were arrested for each crime in each state in 2020 which enables us to be able see if there is a difference in how many people get arrested in each state. The dataset was collected from the FBI's Uniform Crime Reporting (UCR) Program. The program allowed all the arrests in each state in the year of 2020 to be documented with the amount of arrests of people under the age of 18 and over the age of 18, while also showing the amount of people who committed a certain crime (vandalism, assault, arson, etc.). Because the data was collected by the FBI it is extremely credible and trustworthy and I don’t believe that they stand to gain any money from this information.
 
 ## Expected Implications
 
