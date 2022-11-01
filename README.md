@@ -2,7 +2,7 @@
 
 **INFO-201: *Foundational Skills For Data Science* (Autumn 2022)**
 
-*P01: Project Proposal*: [Project Proposal Title - Edit Me!](./docs/p01-proposal.md)
+*P01: Project Proposal*: [Project Proposal Title - Hate Crimes in the U.S.](./docs/p01-proposal.md)
 
 | Project Directories               | Brief Description                                                                                                                                                                                                                                                                                                                       |
 |-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
