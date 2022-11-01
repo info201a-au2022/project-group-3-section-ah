@@ -2,12 +2,14 @@
 
 In our project, we use the following data files and Application Programming Interfaces:
 
-## Data files (TODO: Update/delete for your PROJECT)
+## Data files
 
-| Data File Name                     | Brief Description                                                          |
-|------------------------------------|----------------------------------------------------------------------------|
-| [hate_crime.csv](./hate_crime.csv) | This file contains hate crime data frrom 1991 to 2020, retrieved from FBI. |
-| [Table_69_Arrest_by_State_2020.csv](./Table_69_Arrest_by_State_2020.csv) | This file contains All the arrests by crime in each state, retrieved from FBI. |
+| Data File Name                                                           | Brief Description                                                              |
+|------------------------|-----------------------------------------------|
+| [hate_crime.csv](./hate_crime.csv)                                       | This file contains hate crime data frrom 1991 to 2020, retrieved from FBI.     |
+| [Table_69_Arrest_by_State_2020.csv](./Table_69_Arrest_by_State_2020.csv) | This file contains all the arrests by crime in each state, retrieved from FBI. |
+| [political_party.csv](./political_party.csv)                             | This file contains political party affiliations by state.                      |
+
 ## Application Programming Interfaces (API) (TODO: Update/delete for your PROJECT)
 
 -   **New York Times Books API**. The *New York Times* provides data for Best Sellers lists and the books that have been reviewed in the New York Times. An overview of the API that we use in our project is available here: [Books API](https://developer.nytimes.com/docs/books-product/1/overview). For more about developing apps with New York Times data see: [NYTimes Developers](https://developer.nytimes.com/).
