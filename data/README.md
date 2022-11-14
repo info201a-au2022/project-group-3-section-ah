@@ -5,7 +5,7 @@ In our project, we use the following data files and Application Programming Inte
 ## Data files
 
 | Data File Name                                                           | Brief Description                                                              |
-|------------------------|-----------------------------------------------|
+|--------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [hate_crime.csv](./hate_crime.csv)                                       | This file contains hate crime data frrom 1991 to 2020, retrieved from FBI.     |
 | [Table_69_Arrest_by_State_2020.csv](./Table_69_Arrest_by_State_2020.csv) | This file contains all the arrests by crime in each state, retrieved from FBI. |
 | [political_party.csv](./political_party.csv)                             | This file contains political party affiliations by state.                      |

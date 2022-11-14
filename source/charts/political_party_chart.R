@@ -1,0 +1,50 @@
+# Jiyoon Kim
+# This is a data visualization chart for the question;
+# How does the political party affiliation by state correspond with crime rates?
+# We will be looking at data from 2020.
+library("tidyverse")
+
+#import and organize dataset
+hate_crime <- read.csv(file = 'data/hate_crime.csv') %>%
+  rename(year = DATA_YEAR) %>%
+  rename(state = STATE_NAME) %>%
+  rename(state_po = STATE_ABBR) %>%
+  filter(year == 2020)
+
+political_party <- read.csv(file = 'data/political_party.csv') %>%
+  rename(party = party_simplified) %>%
+  mutate(state = str_to_title(state)) %>%
+  mutate(party = str_to_title(party)) %>%
+  filter(year == 2020)
+
+#how many hate crimes in each state
+state_crimes <- hate_crime %>%
+  group_by(state) %>%
+  summarize(cases = n())
+
+#calculating party affiliation by state
+state_by_votes_2020 <- political_party %>%
+  group_by(state) %>%
+  filter(candidatevotes == max(candidatevotes, na.rm = TRUE)) %>%
+  
+  
+
+#join dataset
+
+#chart
+# include a brief paragraph, describing why you included the chart and what information it reveals, 
+# including notable observations and insights from the chart.
+
+#What am I gonna make?
+# in 2020, party affiliation by state & hate crime rates. 
+# calculate ratio!
+
+
+# dem / re
+# ----- | -----
+# ----- | -----
+# ----- | -----
+# ----- | -----
+# ----- | -----
+# chart kinda like this
+  
