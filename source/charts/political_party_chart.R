@@ -2,10 +2,12 @@
 # This is a data visualization chart for the question;
 # How does the political party affiliation by state correspond with crime rates?
 # We will be looking at data from 2020.
+
+#import necessary package libraries
 library("tidyverse")
 library(ggplot2)
 
-#import and organize dataset
+#import and organize datasets
 hate_crime <- read.csv(file = 'data/hate_crime.csv') %>%
   rename(year = DATA_YEAR,
          state = STATE_NAME,
@@ -38,11 +40,11 @@ state_by_votes_2020 <- political_party %>%
   filter(candidatevotes == max(candidatevotes, na.rm = TRUE)) %>%
   select(state, party)
 
-#join dataset
+#join dataset to create chart
 party_crimerates <- left_join(state_by_votes_2020, state_crimes, by = "state")
 
 
-#Chart
+# Chart
 politics_crime_chart <- ggplot(data = party_crimerates, 
                                aes(x = party, y = state, fill = crime_ratio)) + 
   geom_tile(color = "white") +
