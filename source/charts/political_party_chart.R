@@ -42,19 +42,24 @@ state_by_votes_2020 <- political_party %>%
 party_crimerates <- left_join(state_by_votes_2020, state_crimes, by = "state")
 
 
-#chart
-# include a brief paragraph, describing why you included the chart and what information it reveals, 
-# including notable observations and insights from the chart.
-
-#What am I gonna make?
-# in 2020, party affiliation by state & hate crime rates. 
-# calculate ratio!
-
-# dem / re
-# ----- | -----
-# ----- | -----
-# ----- | -----
-# ----- | -----
-# ----- | -----
-# chart kinda like this
+#Chart
+politics_crime_chart <- ggplot(data = party_crimerates, 
+                               aes(x = party, y = state, fill = crime_ratio)) + 
+  geom_tile(color = "white") +
+  labs(
+    title = "Hate Crime Rates and Party Affiliation by State") +
+  theme(axis.text = element_text(size = 5), 
+        axis.title = element_text(size = 7),
+        axis.title.x = element_text(size = 7),
+        plot.title = element_text(size = 8),
+        legend.key.size = unit(0.4, 'cm'),
+        legend.title = element_text(size = 7),
+        legend.text = element_text(size = 7))
   
+# This is a heatmap chart to answer the research question:
+# "How does the political party affilitation by state correspond with crime rates?".
+# This reveals information regarding which party each state voted for presidency in the 2020 election
+# It also calculates hate crime rates in 2020 by each state, 
+# by calculating the number of crimes in each state divided by the population in each state.
+# By looking at the chart, we can see that the states that voted for the Republican party is darker,
+# While the states that voted for the Democrats are generally lighter in colour (less hate crime)
