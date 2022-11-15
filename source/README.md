@@ -2,10 +2,9 @@
 
 All of our project code is found in this directory. We further organize our code into these sub-directories (TODO: Update/Delete)
 
-| Source Directories        | Brief Description                                      |
-|---------------------------|--------------------------------------------------------|
-| [charts](./source/charts) | This directory includes our data visualization charts. |
-| [xxx](./xxx)              | Description ...                                        |
+| Source Directories | Brief Description                                      |
+|--------------------|--------------------------------------------------------|
+| [charts](./charts) | This directory includes our data visualization charts. |
 
 # DEVELOPER NOTE 1: About ...
 
