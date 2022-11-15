@@ -4,7 +4,6 @@
 # This is the data from the year 2020. 
 install.packages("ggplot2")
 install.packages("plotly")
-library("tidyverse")
 library("dplyr")
 library("tidyr")
 library("ggplot2") 
@@ -12,7 +11,7 @@ library("plotly")
 
 # Load hate crimes dataset. Filter year to 2020
 
-hate_crimes <- read.csv("project-group-3-section-ah/data/hate_crime.csv") %>%
+hate_crimes <- read.csv("https://raw.githubusercontent.com/info201a-au2022/project-group-3-section-ah/main/data/hate_crime.csv") %>%
     rename(year = DATA_YEAR) %>%
     filter(year == 2020)
 
@@ -41,11 +40,7 @@ final_biases_df <- final_biases_df %>%
     mutate(proportion = (new_num_biases/sum(new_num_biases))*100) %>%
     mutate(year = "2020")
 
-# Stacked bar chart... no
-#ggplot(final_biases_df, aes(x = year, y = proportion, fill = biases_array)) +
-  #geom_col()
-
-
+# Simple bar plot
 fig <- plot_ly(data = final_biases_df, x = ~biases_array, y = ~proportion, type = 'bar') %>%
     layout(xaxis = list(autotypenumbers = 'strict', title = 'Types of biases'),
          yaxis = list(title = 'Proportion'),

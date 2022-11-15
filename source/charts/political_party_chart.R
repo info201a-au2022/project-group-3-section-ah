@@ -8,20 +8,20 @@ library("tidyverse")
 library(ggplot2)
 
 #import and organize datasets
-hate_crime <- read.csv(file = 'data/hate_crime.csv') %>%
+hate_crime <- read.csv(file = 'https://raw.githubusercontent.com/info201a-au2022/project-group-3-section-ah/main/data/hate_crime.csv') %>%
   rename(year = DATA_YEAR,
          state = STATE_NAME,
          state_po = STATE_ABBR) %>%
   filter(year == 2020)
 
-political_party <- read.csv(file = 'data/political_party.csv') %>%
+political_party <- read.csv(file = 'https://raw.githubusercontent.com/info201a-au2022/project-group-3-section-ah/main/data/political_party.csv') %>%
   rename(party = party_simplified) %>%
   mutate(state = str_to_title(state),
          party = str_to_title(party)) %>%
   mutate(state = recode(state, `District Of Columbia` = "District of Columbia")) %>%
   filter(year == 2020)
 
-us_population_2020 <- read.csv(file = 'data/US_Population_2020.csv') %>%
+us_population_2020 <- read.csv(file = 'https://raw.githubusercontent.com/info201a-au2022/project-group-3-section-ah/main/data/US_Population_2020.csv') %>%
   rename(state = State,
          population = X2020.Census) %>%
   select(state, population)

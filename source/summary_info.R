@@ -1,6 +1,6 @@
 # summary_info.R 
 # A source file that takes in a dataset and returns a list of info about it:
-hate_crime <- read.csv(file = 'data/hate_crime.csv')
+hate_crime <- read.csv("https://raw.githubusercontent.com/info201a-au2022/project-group-3-section-ah/main/data/hate_crime.csv")
 
 summary_info <- list()
 

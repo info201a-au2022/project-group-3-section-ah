@@ -1,7 +1,7 @@
 #Third Chart
 library(ggplot2)
 library(tidyverse)
-hatecrimelaws <- read.csv("https://raw.githubusercontent.com/info201a-au2022/project-group-3-section-ah/main/data/Hate%20crime%20laws%20by%20state.csv")
+hatecrimelaws <- read.csv("https://raw.githubusercontent.com/info201a-au2022/project-group-3-section-ah/main/data/Hate_crime_laws_by_state.csv")
 
 Yes <- filter(hatecrimelaws, Race.Religion.Ethnicity == "YES")
 No <- filter(hatecrimelaws, Race.Religion.Ethnicity == "NO")
