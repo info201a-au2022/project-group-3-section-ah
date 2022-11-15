@@ -65,8 +65,6 @@ The surge of reported hate crime rates, with its connections with oppression and
     -   It is important to address this question because identifying the root cause behind hate crimes is crucial to solving the problem itself. We hope that we acquire more knowledge on the root cause for a more intricate analysis that addresses intersectionality as a whole, contributing to the community as advocates of data feminism.
 -   **How are hate crimes punishable across different states?**
     -   This question is important because we believe the outcomes of hate crimes will have an impact on hate crime rates. We wish to know if any states are more lenient or strict on hate crime punishments, and how it would affect hate crime rates by state.
--   **Do minority populations affect hate crimes in an area?**
-    -   We wish to know if a larger minority population by state mitigates or exacerbates hate crime occurrences. This question is important because an analysis of hate crime occurrences by minority populations in different areas will inform stakeholders of their safety depending on location.
 -   **How does the political party affiliation by state correspond with crime rates?**
     -   As we believe that political party affiliation has a connection to oppression that is happening in the U.S., we wish to know which states tend to advocate for a certain party and whether it affects changes in crime rates. With this analysis, stakeholders would be informed of any distinctions and will be prompted to make an action.
 
