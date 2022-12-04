@@ -2,11 +2,8 @@
 # This is a data visualization chart for the question;
 # What are the causes and motivations for hate crimes?
 # This is the data from the year 2020. 
-install.packages("ggplot2")
-install.packages("plotly")
+
 library("dplyr")
-library("tidyr")
-library("ggplot2") 
 library("plotly")
 
 # Load hate crimes dataset. Filter year to 2020
