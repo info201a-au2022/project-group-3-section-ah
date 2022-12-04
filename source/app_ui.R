@@ -1,4 +1,5 @@
 # Define UI
+library("shiny")
 library("dplyr")
 library("plotly")
 
@@ -25,7 +26,7 @@ inputs <- sidebarPanel(
     )
 )
 
-# Interactive Page
+# Interactive Page - Qiqi
 
 interactive_page <- tabPanel(
   "Interactive Plot",
@@ -34,10 +35,33 @@ interactive_page <- tabPanel(
   p("...information about plot...")
 )
 
+# Interactive page 2 - Michael
+
+# Interactive page 3 - political party (Jiyoon)
+interactive_political_party <- tabPanel(
+  "Political Party",
+  titlePanel("Political Party"),
+  sidebarLayout(
+    sidebarPanel(
+      selectInput(inputId = "year",
+                  label = "Year",
+                  choices= year),
+    ),
+    mainPanel(
+      h3("Political Party Comparison?"),
+      p("plots, data tables, etc. go here")
+    )
+  )
+)
+
+
 ui <- navbarPage(
-  titlePanel("Types of causes of hate crimes"),
+  titlePanel("Hate Crimes in the U.S."),
   introduction_page,
-  interactive_page  
+  interactive_page, #qiqi's
+  #michael's interactive page goes here
+  interactive_political_party, #Jiyoon's interactive page
+  
 )
 
 
