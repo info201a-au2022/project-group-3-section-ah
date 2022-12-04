@@ -1,18 +1,9 @@
-<<<<<<< Updated upstream
-﻿State,Penalty Enhancement,Race/Religion/Ethnicity,Sexual Orientation,Disability,Gender,Gender Identity
-Alabama,AL ST § 13A-5-13 (1993),YES,NO,YES,NO,NO
-Alaska,AS § 12.55.155 (1996),YES,NO,YES,YES,NO
-Arizona,AZ ST § 13-701,YES,YES,YES,YES,NO
-Arkansas,N/A,NO,NO,NO,NO,NO
-California,"CA PENAL § 422.55
-=======
-﻿state,code,Penalty Enhancement,Race/Religion/Ethnicity,Sexual Orientation,Disability,Gender,Gender Identity
+state,code,Penalty Enhancement,Race/Religion/Ethnicity,Sexual Orientation,Disability,Gender,Gender Identity
 Alabama,AL,AL ST § 13A-5-13 (1993),1,0,1,0,0
 Alaska,AK,AS § 12.55.155 (1996),1,0,1,1,0
 Arizona,AZ,AZ ST § 13-701,1,1,1,1,0
 Arkansas,AR,N/A,0,0,0,0,0
 California,CA,"CA PENAL § 422.55
->>>>>>> Stashed changes
 CA PENAL § 422.7
 CA PENAL § 422.75",1,1,1,1,1
 Colorado,CO,CO ST § 18-9-121 (1988),1,1,1,0,1
