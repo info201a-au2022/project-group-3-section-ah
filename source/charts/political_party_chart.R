@@ -57,7 +57,7 @@ politics_crime_chart <- ggplot(data = party_crimerates,
         legend.key.size = unit(0.4, 'cm'),
         legend.title = element_text(size = 7),
         legend.text = element_text(size = 7))
-  
+
 # This is a heatmap chart to answer the research question:
 # "How does the political party affilitation by state correspond with crime rates?".
 # This reveals information regarding which party each state voted for presidency in the 2020 election
