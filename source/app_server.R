@@ -94,15 +94,10 @@ server <- function(input, output) {
                zerolinewidth = 2,
                gridcolor = 'ffff'))
   })
-  
-<<<<<<< HEAD
 # ------------------------------------------------------------
 # ------------------------------------------------------------
-  
-=======
   output$map <- renderPlotly({ 
     return(build_map(df1, input$mapvar))
   }) 
->>>>>>> 7d16966d87e732ac3168efe863ed682083c05999
   
 }

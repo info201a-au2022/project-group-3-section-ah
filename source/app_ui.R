@@ -54,6 +54,8 @@ map_sidebar_content <- sidebarPanel(selectInput("mapvar", label = "Variable to M
 map_main_content <- mainPanel(plotlyOutput("map"))
 
 map_panel <- tabPanel("Map",titlePanel("Protection by Identifier"), sidebarLayout(map_sidebar_content, map_main_content))
+
+
 # Interactive page 3 - political party (Jiyoon)
 interactive_political_party <- tabPanel(
   "Political Party",
@@ -77,15 +79,9 @@ ui <- navbarPage(
   titlePanel("Hate Crimes in the U.S."),
   introduction_page,
   interactive_page, #qiqi's
-<<<<<<< HEAD
-  #michael's interactive page goes here
-  interactive_political_party #Jiyoon's interactive page
-  
-=======
   map_panel, #michael's interactive page goes here
   interactive_political_party, #Jiyoon's interactive page
   Takeaways, #michael's takeaways
->>>>>>> 7d16966d87e732ac3168efe863ed682083c05999
 )
 
 
