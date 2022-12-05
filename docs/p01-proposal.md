@@ -65,7 +65,7 @@ The surge of reported hate crime rates, with its connections with oppression and
     -   It is important to address this question because identifying the root cause behind hate crimes is crucial to solving the problem itself. We hope that we acquire more knowledge on the root cause for a more intricate analysis that addresses intersectionality as a whole, contributing to the community as advocates of data feminism.
 -   **How are hate crimes punishable across different states?**
     -   This question is important because we believe the outcomes of hate crimes will have an impact on hate crime rates. We wish to know if any states are more lenient or strict on hate crime punishments, and how it would affect hate crime rates by state.
--   **How does the political party affiliation by state correspond with crime rates?**
+-   **How does the political party affiliation by state correspond with hate crime rates?**
     -   As we believe that political party affiliation has a connection to oppression that is happening in the U.S., we wish to know which states tend to advocate for a certain party and whether it affects changes in crime rates. With this analysis, stakeholders would be informed of any distinctions and will be prompted to make an action.
 
 ## The Dataset
@@ -105,6 +105,13 @@ The surge of reported hate crime rates, with its connections with oppression and
 ## Findings
 
 Give answers to research questions (400 words)
+
+-   **What are the causes and motivations behind hate crimes?**
+    -   
+-   **How are hate crimes punishable across different states?**
+    -   
+-   **How does the political party affiliation by state correspond with hate crime rates?**
+    -   By analyzing data in 2020, we calculated the ratio of hate crime occurrences by state population. Then we extracted the 2020 election data in order to determine party affiliations by each state. With this analysis, we found out that the political party affiliation of each state did not necessarily correspond with lower hate crime rates. States that affiliate with the Democratic party had higher hate crime rates, with the District of Columbia, New Jersey, and Vermont being the biggest outliers. On the contrary, states that affiliate with the Republican party had lower hate crime rates in general.
 
 ## Discussion
 
