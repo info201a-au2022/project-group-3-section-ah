@@ -41,7 +41,7 @@ Takeaways <- tabPanel(
   h2("The Three Key Takeaways"),
   p("1.) Although the 50 states party affiliation is 50% Democrat + D.C and 50% Republican, By looking at the chart, we can see that the states that voted for the Republican party is darker, While the states that voted for the Democrats are generally lighter in color which means less hate crime"),
   
-  p("2.) Most states have punishments for Hate crimes, excluding Arkansas, Indiana, South Carolina, and Wyoming. and although most states have laws against things such as race, religion, and ethnicity. Some states start to dwindle on Disability, Gender, Sexual Orientation, and most of all Gender Identity."), 
+  p("2.) Most states have punishments for Hate crimes, excluding Arkansas, Indiana, South Carolina, and Wyoming. and although most states have laws protecting things such as race, religion, and ethnicity. Some states start to dwindle on Disability, Gender, Sexual Orientation, and most of all Gender Identity."), 
   
   p("3.) The top 3 Hate crimes (documented) that were committed were Anti-Black or African American, Anti-Gay (Male), and Anti-Jewish. Which means that Racism, Anti-Semitism, and Homophobia are still prevalent, however that doesn't mean only those things exist, overall hatred is too big of a problem in our country")
 )
