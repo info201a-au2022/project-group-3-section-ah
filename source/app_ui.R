@@ -43,11 +43,8 @@ interactive_political_party <- tabPanel(
   titlePanel("Political Party"),
   sidebarLayout(
     sidebarPanel(
-      sliderInput(inputId = "year",
-                  label = "Year (1990 ~ 2018)",
-                  min = 1990,
-                  max = 2018,
-                  value = 1990),
+      textInput(inputId = "year",
+                  label = "Year (1990 ~ 2018)")
     ),
     mainPanel(
       h3("Political Party Comparison"),
@@ -64,7 +61,7 @@ ui <- navbarPage(
   introduction_page,
   interactive_page, #qiqi's
   #michael's interactive page goes here
-  interactive_political_party, #Jiyoon's interactive page
+  interactive_political_party #Jiyoon's interactive page
   
 )
 

@@ -11,6 +11,15 @@ hate_crimes <- read.csv("https://raw.githubusercontent.com/info201a-au2022/proje
 
 server <- function(input, output) {
   
+  output$politics_crime_chart <- renderPlot({
+    
+  }
+    
+  )
+  
+  
+# --------------------Qiqi's code-----------------------------
+# ------------------------------------------------------------
   output$plot <-renderPlot ({
     
     # Filter based on year input
@@ -53,6 +62,9 @@ server <- function(input, output) {
                zerolinewidth = 2,
                gridcolor = 'ffff'))
   })
+  
+# ------------------------------------------------------------
+# ------------------------------------------------------------
   
   
 }
