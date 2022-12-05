@@ -2,6 +2,9 @@
 library("shiny")
 library("dplyr")
 library("plotly")
+library(shinythemes)
+
+
 
 hate_crimes <- read.csv("https://raw.githubusercontent.com/info201a-au2022/project-group-3-section-ah/main/data/hate_crime.csv") %>%
   rename(year = DATA_YEAR)
@@ -84,8 +87,8 @@ report <- tabPanel(
   #)
 )
 
-ui <- navbarPage(
-  titlePanel("Hate Crimes in the U.S."),
+ui <- navbarPage("Hate Crimes in the U.S.",
+  theme = shinytheme("darkly"),
   introduction_page, # qiqi's intro page 
   interactive_page, #qiqi's interactive page
   map_panel, #michael's interactive page goes here
