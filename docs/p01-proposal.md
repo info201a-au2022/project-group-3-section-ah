@@ -4,19 +4,20 @@
 
 ------------------------------------------------------------------------
 
-**Authors**\
-Jiyoon Kim \| jiyoon99\@uw.edu\
-Qiqi Liang \| [qiqi2\@uw.edu](mailto:qiqi2@uw.edu){.email}\
-Michael Cinnamon \| [cinnammj\@uw.edu](mailto:cinnammj@uw.edu){.email}\
-\
-**Affiliation**\
-INFO-201: Foundational Skills For Data Science - The Information School - University of Washington\
-\
-**Date**: Autumn 2022\
-\
-**Abstract**\
-We are concerned with the increase hate crime in the U.S. This is an important concern to address because no one should feel unsafe for who they are, regardless of race/ethnicity, gender, sexual orientation, or other factors. To address this concern, we plan to examine datasets from the FBI by state, exploring the locations, types of minorities affected by oppression, and other categories.\
-\
+**Authors**
+
+Jiyoon Kim \| jiyoon99@uw.edu
+
+Qiqi Liang \| qiqi2@uw.edu
+
+Michael Cinnamon \| cinnammj@uw.edu
+
+**Affiliation** INFO-201: Foundational Skills For Data Science - The Information School - University of Washington
+
+**Date**: Autumn 2022
+
+**Abstract** We are concerned with the increase hate crime in the U.S. This is an important concern to address because no one should feel unsafe for who they are, regardless of race/ethnicity, gender, sexual orientation, or other factors. To address this concern, we plan to examine datasets from the FBI by state, exploring the locations, types of minorities affected by oppression, and other categories.
+
 **Keywords**: social justice; hate crime in the U.S.; oppression
 
 ------------------------------------------------------------------------

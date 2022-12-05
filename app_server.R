@@ -3,7 +3,7 @@ library("dplyr")
 library("plotly")
 
 #source files
-source("./charts/political_party_chart.R")
+source("./source/charts/political_party_chart.R")
 
 # CSV files
 hate_crimes <- read.csv("https://raw.githubusercontent.com/info201a-au2022/project-group-3-section-ah/main/data/hate_crime.csv") %>%
@@ -38,25 +38,6 @@ build_map <- function(data, map.var) {
   return(p)
 }
 
-# Jiyoon's functions
-Democrat_data <- party_crimerates %>%
-  filter(party == "Democrat")
-
-Republican_data <- party_crimerates %>%
-  filter(party == "Republican") %>%
-  na.omit()
-
-Democrat <- ggplot(Democrat_data) + 
-  aes(x = state, y = crime_ratio) + 
-  geom_point() +
-  theme(axis.text.x = element_text(angle = 45))
-
-Republican <- ggplot(Republican_data) + 
-  aes(x = state, y = crime_ratio) + 
-  geom_point() + 
-  theme(axis.text.x = element_text(angle = 45))
-
-
 
 # Server  
 server <- function(input, output) {
@@ -90,11 +71,28 @@ server <- function(input, output) {
     
   })
   
+  
   # Jiyoon's plot
-  output$political_chart <- renderPlot({
+  output$political_chart <- renderPlotly({
     
-    if(input$party == "Democrat") { Democrat }
-    else { Republican }
+    # Democrat_data <- party_crimerates %>%
+    #   filter(party == "Democrat")
+    # 
+    # Republican_data <- party_crimerates %>%
+    #   filter(party == "Republican") %>%
+    #   na.omit()
+    # 
+    # Democrat <- plot_ly(data = Democrat_data, x = ~crime_ratio, y = ~state, type = 'scatter',
+    #                     mode = "markers", marker = list(color = "blue"))
+    # Republican <- plot_ly(data = Republican_data, x = ~crime_ratio, y = ~state, type = 'scatter',
+    #                       mode = "markers", marker= list(color = "red"))
+    
+    plot_ly(party_crimerates, x = ~state, y = ~crime_ratio) %>%
+      filter(party == input$party) %>%
+      group_by(party) %>%
+      add_markers()
+    # if(identical(input$party, "Democrat")) { return(Democrat)}
+    # else { return(Republican) }
   })
   
   # Michael's plot

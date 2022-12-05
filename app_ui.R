@@ -60,16 +60,16 @@ interactive_political_party <- tabPanel(
   titlePanel("Political Party"),
   sidebarLayout(
     sidebarPanel(
-      selectInput(inputId = "party",
+      selectizeInput(inputId = "party",
                   label = "Political Party Identification",
-                  choices = c("Democrat" = "Democrat", "Republican" = "Republican"),
-                  selected = "Democrat"
+                  choices = unique(party_crimerates$party),
+                  selected = "Democrat",
+                  multiple = FALSE
       )
     ),
     mainPanel(
       h3("Political Party Comparison"),
-      p("plots, data tables, etc. go here",
-        plotOutput(outputId = "political_chart")
+      p(plotlyOutput(outputId = "political_chart")
       )
     )
   )
@@ -79,12 +79,13 @@ interactive_political_party <- tabPanel(
 report <- tabPanel(
   "Report",
   titlePanel("Report"),
-  #mainPanel(
-  #includeMarkdown("p01-proposal.md")
-  #)
+  mainPanel(
+  includeMarkdown("./docs/p01-proposal.md")
+  )
 )
 
 ui <- navbarPage(
+  theme = shinythemes::shinytheme("superhero"),
   titlePanel("Hate Crimes in the U.S."),
   introduction_page, # qiqi's intro page 
   interactive_page, #qiqi's interactive page
