@@ -43,13 +43,17 @@ interactive_political_party <- tabPanel(
   titlePanel("Political Party"),
   sidebarLayout(
     sidebarPanel(
-      selectInput(inputId = "year",
-                  label = "Year",
-                  choices= year),
+      sliderInput(inputId = "year",
+                  label = "Year (1990 ~ 2018)",
+                  min = 1990,
+                  max = 2018,
+                  value = 1990),
     ),
     mainPanel(
-      h3("Political Party Comparison?"),
-      p("plots, data tables, etc. go here")
+      h3("Political Party Comparison"),
+      p("plots, data tables, etc. go here",
+        plotOutput(outputId = "politics_crime_chart")
+      )
     )
   )
 )
