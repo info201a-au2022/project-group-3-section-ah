@@ -7,33 +7,31 @@ hate_crimes <- read.csv("https://raw.githubusercontent.com/info201a-au2022/proje
   rename(year = DATA_YEAR)
 
 
-# Introduction page
 introduction_page <- tabPanel(
   "Introduction",
   h2("Introduction"),
-  p("...intro paragraph...")
+  p("Our project focuses on analyzing trends in hate crimes. The questions we are aiming to address include: What are the causes and motivations behind hate crimes? How are hate crimes punishable across different states? How does the political party affiliation by state correspond with crime rates? The first dataset we will be using comes from the FBI's Uniform Crime Reporting (UCR) Program. This dataset includes various information about the hate crime, such as demographics of vistoms/perpetrators and potential causes behind that hate crime data. The second dataset we will analyze comes Harvard Dataverse. This dataset tells us the voting outcome for presidential candidates from years 1976-2020 and can potentially give insight on how political party affiliation may be linked with hate crimes. The third dataset is the US Population dataset from Kaggle. This dataset tells us the population in each state in the U.S. in 2020. Our final dataset is from ADL(Anti-Defamation League). This dataset tells us which states have laws protecting hate crimes, and if not all then which hate crimes it protects.")
 )
 
 # Sidebar
 inputs <- sidebarPanel(
   
-    sliderInput(
-      inputID = year,
-      label = "Choose year",
-      min = 2000,
-      max = 2020,
-      value = range(hate_crimes$year)
-    )
+  selectInput(
+    inputId = "yearvar",
+    label = "Choose year",
+    choices = c(2010,2011,2012,2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020)
+  )
 )
 
-# Interactive Page - Qiqi
+# Interactive Page1
 
 interactive_page <- tabPanel(
-  "Interactive Plot",
+  "Bar plot",
   sidebarLayout(inputs,
-                mainPanel(plotlyOutput("plot"))),
-  p("...information about plot...")
+                mainPanel(plotlyOutput("motovation_plot"))),
+  p("This bar plot showcases the proportion (%) of the causes and motivations behind hate crimes for a specified year (2000-2010).")
 )
+
 
 # Interactive page 2 - Michael
 Takeaways <- tabPanel(
@@ -81,15 +79,15 @@ interactive_political_party <- tabPanel(
 report <- tabPanel(
   "Report",
   titlePanel("Report"),
-  mainPanel(
-    includeMarkdown("p01-proposal.md")
-  )
+  #mainPanel(
+  #includeMarkdown("p01-proposal.md")
+  #)
 )
 
 ui <- navbarPage(
   titlePanel("Hate Crimes in the U.S."),
-  introduction_page,
-  interactive_page, #qiqi's
+  introduction_page, # qiqi's intro page 
+  interactive_page, #qiqi's interactive page
   map_panel, #michael's interactive page goes here
   interactive_political_party, #Jiyoon's interactive page
   Takeaways, #michael's takeaways
