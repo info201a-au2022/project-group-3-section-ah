@@ -9,6 +9,38 @@ source("./charts/political_party_chart.R")
 hate_crimes <- read.csv("https://raw.githubusercontent.com/info201a-au2022/project-group-3-section-ah/main/data/hate_crime.csv") %>%
   rename(year = DATA_YEAR)
 
+##################################### MICHAEL START
+#Michael CSV
+state_codes <- read.csv('https://raw.githubusercontent.com/info201a-au2022/project-group-3-section-ah/main/data/state_codes.csv', stringsAsFactors = FALSE)
+df1 <- read.csv('https://raw.githubusercontent.com/info201a-au2022/project-group-3-section-ah/main/data/Hate_crime_laws_by_state.csv', stringsAsFactors = FALSE)
+#Michael Function for Map
+build_map <- function(data, map.var) {
+  
+  l <- list(color = toRGB("white"), width = 2)
+  
+  g <- list(
+    scope = 'usa',
+    projection = list(type = 'albers usa'),
+    showlakes = TRUE,
+    lakecolor = toRGB('white')
+  )
+  
+  var.equation <- paste0('~', map.var)
+  
+  p <- plot_geo(data, locationmode = 'USA-states') %>%
+    add_trace(
+      z = data[,map.var], text = ~state, locations = ~code,
+      color = data[,map.var], colors = 'Purples'
+    ) %>%
+    colorbar(title = "Color Title") %>%
+    layout(
+      title = str_to_title(map.var),
+      geo = g
+    )
+  return(p)
+}
+###################################### MICHAEL END
+
 server <- function(input, output) {
   
   output$plot <-renderPlot ({
@@ -54,5 +86,8 @@ server <- function(input, output) {
                gridcolor = 'ffff'))
   })
   
+  output$map <- renderPlotly({ 
+    return(build_map(df1, input$mapvar))
+  }) 
   
 }
