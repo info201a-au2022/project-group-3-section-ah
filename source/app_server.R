@@ -41,59 +41,78 @@ build_map <- function(data, map.var) {
 }
 ###################################### MICHAEL END
 
+
+# ==================JIYOON START=====================
+Democrat_data <- party_crimerates %>%
+  filter(party == "Democrat")
+
+Republican_data <- party_crimerates %>%
+  filter(party == "Republican") %>%
+  na.omit()
+
+Democrat <- ggplot(Democrat_data) + 
+  aes(x = state, y = crime_ratio) + 
+  geom_point() +
+  theme(axis.text.x = element_text(angle = 45))
+
+Republican <- ggplot(Republican_data) + 
+  aes(x = state, y = crime_ratio) + 
+  geom_point() + 
+  theme(axis.text.x = element_text(angle = 45))
+
+# ==================JIYOON END=====================
+
+
 server <- function(input, output) {
-  
-  output$politics_crime_chart <- renderPlot({
-    
-  }
-    
-  )
-  
+  output$political_chart <- renderPlot({
+    if(input$party == "Democrat") { Democrat }
+    else { Republican }
+  })
   
 # --------------------Qiqi's code-----------------------------
 # ------------------------------------------------------------
-  output$plot <-renderPlot ({
-    
-    # Filter based on year input
-    hate_crimes <- hate_crimes %>%
-      filter(year == input$year)
-    
-    #Group and summarise data based on motivations/biases.
-    biases_grouped_df <- hate_crimes %>%
-      group_by(BIAS_DESC) %>%
-      summarise(num_biases = n())
-    
-    # Split the BIAS_DESC column into a list
-    biases_grouped_df_splited <- biases_grouped_df %>%
-      mutate(biases_array = strsplit(BIAS_DESC, ";")) %>%
-      unnest(biases_array)
-    
-    # Count unique biases and store in new dataframe to plot
-    final_biases_df <- biases_grouped_df_splited %>%
-      group_by(biases_array)%>%
-      summarise(new_num_biases = n())
-    
-    # Convert to percentages
-    
-    final_biases_df <- final_biases_df %>%
-      mutate(proportion = (new_num_biases/sum(new_num_biases))*100) %>%
-      mutate(year = input$year)
-      
-    
-    # Simple bar plot
-    fig <- plot_ly(data = final_biases_df, x = ~biases_array, y = ~proportion, type = 'bar') %>%
-      layout(xaxis = list(autotypenumbers = 'strict', title = 'Types of biases'),
-             yaxis = list(title = 'Proportion'),
-             plot_bgcolor='#e5ecf6',
-             xaxis = list(
-               zerolinecolor = '#ffff',
-               zerolinewidth = 2,
-               gridcolor = 'ffff'),
-             yaxis = list(
-               zerolinecolor = '#ffff',
-               zerolinewidth = 2,
-               gridcolor = 'ffff'))
-  })
+  # output$plot <-renderPlot ({
+  #   
+  #   # Filter based on year input
+  #   hate_crimes <- hate_crimes %>%
+  #     filter(year == input$year)
+  #   
+  #   #Group and summarise data based on motivations/biases.
+  #   biases_grouped_df <- hate_crimes %>%
+  #     group_by(BIAS_DESC) %>%
+  #     summarise(num_biases = n())
+  #   
+  #   # Split the BIAS_DESC column into a list
+  #   biases_grouped_df_splited <- biases_grouped_df %>%
+  #     mutate(biases_array = strsplit(BIAS_DESC, ";")) %>%
+  #     unnest(biases_array)
+  #   
+  #   # Count unique biases and store in new dataframe to plot
+  #   final_biases_df <- biases_grouped_df_splited %>%
+  #     group_by(biases_array)%>%
+  #     summarise(new_num_biases = n())
+  #   
+  #   # Convert to percentages
+  #   
+  #   final_biases_df <- final_biases_df %>%
+  #     mutate(proportion = (new_num_biases/sum(new_num_biases))*100) %>%
+  #     mutate(year = input$year)
+  #     
+  #   
+  #   # Simple bar plot
+  #   fig <- plot_ly(data = final_biases_df, x = ~biases_array, y = ~proportion, type = 'bar') %>%
+  #     layout(xaxis = list(autotypenumbers = 'strict', title = 'Types of biases'),
+  #            yaxis = list(title = 'Proportion'),
+  #            plot_bgcolor='#e5ecf6',
+  #            xaxis = list(
+  #              zerolinecolor = '#ffff',
+  #              zerolinewidth = 2,
+  #              gridcolor = 'ffff'),
+  #            yaxis = list(
+  #              zerolinecolor = '#ffff',
+  #              zerolinewidth = 2,
+  #              gridcolor = 'ffff'))
+  # })
 # ------------------------------------------------------------
 # ------------------------------------------------------------
   output$map <- renderPlotly({ 

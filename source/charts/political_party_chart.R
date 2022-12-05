@@ -31,7 +31,7 @@ state_crimes <- hate_crime %>%
   group_by(state) %>%
   summarize(cases = n()) %>%
   left_join(us_population_2020, by = "state") %>%
-  mutate(crime_ratio = cases / population) %>%
+  mutate(crime_ratio = (cases / population) * 100) %>%
   select(state, crime_ratio)
 
 #calculating party affiliation by state
@@ -49,7 +49,7 @@ politics_crime_chart <- ggplot(data = party_crimerates,
                                aes(x = party, y = state, fill = crime_ratio)) + 
   geom_tile(color = "white") +
   labs(
-    title = "Hate Crime Rates and Party Affiliation by State") +
+    title = "Hate Crime Rates and Party Affiliation by State in 2020") +
   theme(axis.text = element_text(size = 5), 
         axis.title = element_text(size = 7),
         axis.title.x = element_text(size = 7),
@@ -57,6 +57,8 @@ politics_crime_chart <- ggplot(data = party_crimerates,
         legend.key.size = unit(0.4, 'cm'),
         legend.title = element_text(size = 7),
         legend.text = element_text(size = 7))
+
+politics_crime_chart
 
 # This is a heatmap chart to answer the research question:
 # "How does the political party affilitation by state correspond with crime rates?".
