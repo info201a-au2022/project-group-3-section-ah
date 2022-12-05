@@ -77,6 +77,14 @@ interactive_political_party <- tabPanel(
   )
 )
 
+# Report page - Jiyoon
+report <- tabPanel(
+  "Report",
+  titlePanel("Report"),
+  mainPanel(
+    includeMarkdown("p01-proposal.md")
+  )
+)
 
 ui <- navbarPage(
   titlePanel("Hate Crimes in the U.S."),
@@ -85,6 +93,7 @@ ui <- navbarPage(
   map_panel, #michael's interactive page goes here
   interactive_political_party, #Jiyoon's interactive page
   Takeaways, #michael's takeaways
+  report #report file by Jiyoon
 )
 
 
