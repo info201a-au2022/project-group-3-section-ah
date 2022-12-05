@@ -73,7 +73,7 @@ The surge of reported hate crime rates, with its connections with oppression and
 -   Table:
 
 | Data file name                | Purpose                                                                                                                                                                                                                                                                                           | Number of observations               | Number of variables | Citations                                                                                                                                     | URL                                                                                    |
-|-----------|-----------------|-----------|-----------|-----------|-----------|
+|------------|------------|------------|------------|------------|------------|
 | hate_crime                    | The purpose of this dataset is to help law enforcement address issues for communities, provide policymakers with justification for legislation, supply the media with credible information, show hate crime victims they are not alone, and help researchers in determining trends in hate crimes | 219577                               | 28                  | Learn about hate crimes. The United States Department of Justice. (2022, June 16). Retrieved October 29, 2022                                 | <https://www.justice.gov/hatecrimes/learn-about-hate-crimes>                           |
 | Arrests by state 2020         | The purpose of this dataset is to hopefully show that the people who committed the hate crimes in 2020 got arrested, we can use the forms of attack (vandalism, assualt, arson, etc.) and the state to cross examine if they got arrested in each state                                           | 102 (2 for each state including D.C) | 35                  | FBI. (n.d.). Federal Bureau of Investigation Crime Data Explorer. Crime. Retrieved October 31, 2022                                           | <https://crime-data-explorer.app.cloud.gov/pages/explorer/crime/arrest>                |
 | Political Party               | The purpose of this dataset is to show the voting outcomes for different US presidential candidates from the years 1976-2020. The dataset allows us to see which political parties were most favored in different states.                                                                         | 4288                                 | 15                  | U.S President 1976-2020. Harvard Dataverse. (n.d.). Retrieved October 31, 2022                                                                | <https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/42MVDX>      |
@@ -104,22 +104,31 @@ The surge of reported hate crime rates, with its connections with oppression and
 
 ## Findings
 
-Give answers to research questions (400 words)
-
 -   **What are the causes and motivations behind hate crimes?**
-    -   
+
+    -   From the hate crimes dataset, it seems like the causes behind most hate crimes are attributed to anti blackness sentiment. Roughly 15% of the hate crimes in the U.S are anti-blackness motivated. The next highest motivator for hate crimes is anti-gayness (male). The third highest motivator for hate crimes is anti-Jewish sentiment, with roughly 7% of hate crimes being reported as targeting Jews. Anti-racial hate crimes are the most prevalent, compared to others such as gender, religious, or disability-related hate crimes.
+
 -   **How are hate crimes punishable across different states?**
-    -   
+
+    -   Most states have punishments for Hate crimes, excluding Arkansas, Indiana, South Carolina, and Wyoming. and although most states have laws protecting things such as Race, Religion, and Ethnicity. Some states start to dwindle on Disability, Gender, Sexual Orientation, and most of all Gender Identity. And all hate crimes are treated as the crime they committed ex. felony and misdemeanor, and sometimes the punishment can be enhanced, like adding more years to prison sentence, because it was seen as a hate crime.
+
 -   **How does the political party affiliation by state correspond with hate crime rates?**
+
     -   By analyzing data in 2020, we calculated the ratio of hate crime occurrences by state population. Then we extracted the 2020 election data in order to determine party affiliations by each state. With this analysis, we found out that the political party affiliation of each state did not necessarily correspond with lower hate crime rates. States that affiliate with the Democratic party had higher hate crime rates, with the District of Columbia, New Jersey, and Vermont being the biggest outliers. On the contrary, states that affiliate with the Republican party had lower hate crime rates in general.
 
 ## Discussion
 
-Discuss importance and/or implications of findings (400 words)
+From discovering the causes and motivations behind hate crimes, we found out that the most targeted minority group for hate crimes were racial minorities, especially black people. Occurrences for anti-blackness were significantly higher compared to other categories. This implies that black people would be the victim of the most discrimination in the U.S. Considering the relatively recent incidents of police brutality on Black people such as George Floyd, and the resulting rise of the Black Lives Matter movement, we speculated that these social issues tied in with the higher occurrences.
+
+From the analysis of hate crime laws in different states, we found out that most states had laws that protect minority groups, even though some laws regarding the LGBTQ+ was dwindling. This finding was important because of the findings mentioned above regarding the crimes and motivations behind hate crimes. We speculated that this could be a reason for the second biggest cause of hate crimes, which was anti-gayness (male). Also, because hate crimes did not have a specific category but were treated as the crime that was committed, we speculated that it could be another reason why hate crimes were experiencing a recent increase.
+
+From the analysis of political party affiliation by each state and hate crime rates, we found out that the political party affiliation by state did not necessarily correspond with hate crime rates. We identified possible factors from this finding; we speculated that the determining factor for this finding could not just rely on state population in general; it could also rely on factors such as black, gay, or jewish population. It could also be that the analysis should examine the population data in detail, such as county-level population data of minority groups.
 
 ## Conclusion
 
-Give the reader a summary point, the key point that you will like your audience to leave with (400)
+Hate crime rates in the U.S. have experienced an increase, and the safety of minority groups is more important than ever. By using multiple datasets such as hate crime occurrences, state laws, presidential voting data, etc., we investigated the causes and motivations behind hate crimes, punishable hate crime laws in different states, and whether the political party affiliation influenced hate crime rates. Black people were the most susceptible to hate crimes and laws were being less protective of the LGBTQ+, even when anti-gayness was the second biggest cause behind hate crimes. While the political party affiliation by state did not necessarily correspond with hate crime rates, we assumed that other factors would affect hate crime rates such as different racial population rates.
+
+It is important to reiterate that "the FBI's annual report vastly understates the real level of hate crimes in the country (The Southern Poverty Law Center, 2020)." The data that we have is only a fraction of what is happening in reality, but even so, it reflects the society on a certain level.
 
 ------------------------------------------------------------------------
 
@@ -146,7 +155,3 @@ TRAC Reports, Inc. (2019, August 12). *Few federal hate crime referrals result i
 YouGov. (2022, September 30). *Racism: Opinions of adults on current state by party U.S. 2020*. Statista. Retrieved October 31, 2022, from <https://www.statista.com/statistics/1131594/opinions-us-adults-current-state-racism-political-party/> 
 
 Hate crime map (no date) ADL. Available at: <https://www.adl.org/resources/tools-to-track-hate/hate-crime-map> (Accessed: November 14, 2022).
-
-### Appendix A: Questions
-
--   What can we do more to improve our research analysis?
