@@ -12,6 +12,7 @@ hate_crimes <- read.csv("https://raw.githubusercontent.com/info201a-au2022/proje
 
 introduction_page <- tabPanel(
   "Introduction",
+  img(src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJBiNfSUrPPb2EnwfP81aT6PibwLHYAaw9ag&usqp=CAU", height = 250, width = "100%"),
   h2("Introduction"),
   p("Our project focuses on analyzing trends in hate crimes. The questions we are aiming to address include: What are the causes and motivations behind hate crimes? How are hate crimes punishable across different states? How does the political party affiliation by state correspond with crime rates? The first dataset we will be using comes from the FBI's Uniform Crime Reporting (UCR) Program. This dataset includes various information about the hate crime, such as demographics of vistoms/perpetrators and potential causes behind that hate crime data. The second dataset we will analyze comes Harvard Dataverse. This dataset tells us the voting outcome for presidential candidates from years 1976-2020 and can potentially give insight on how political party affiliation may be linked with hate crimes. The third dataset is the US Population dataset from Kaggle. This dataset tells us the population in each state in the U.S. in 2020. Our final dataset is from ADL(Anti-Defamation League). This dataset tells us which states have laws protecting hate crimes, and if not all then which hate crimes it protects.")
 )
@@ -32,7 +33,7 @@ interactive_page <- tabPanel(
   "Bar plot",
   sidebarLayout(inputs,
                 mainPanel(plotlyOutput("motovation_plot"))),
-  p("This bar plot showcases the proportion (%) of the causes and motivations behind hate crimes for a specified year (2000-2010).")
+  p(em("This bar plot showcases the proportion (%) of the causes and motivations behind hate crimes for a specified year (2000-2010). Across the decade, anti racial sentiments seem to be the main motivators behind hate crimes."))
 )
 
 
