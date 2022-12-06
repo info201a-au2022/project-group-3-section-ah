@@ -55,7 +55,8 @@ map_sidebar_content <- sidebarPanel(selectInput("mapvar", label = "Variable to M
 
 map_main_content <- mainPanel(plotlyOutput("map"))
 
-map_panel <- tabPanel("Map",titlePanel("Protection by Identifier"), sidebarLayout(map_sidebar_content, map_main_content))
+map_panel <- tabPanel("Map",titlePanel("Protection by Identifier"), sidebarLayout(map_sidebar_content, map_main_content),
+                      p(em("This map shows what certain subgroups of people (ex. race, gender, disability) are protected by laws in each state, the laws protect these groups from hate crimes being committed agaisnt them and can also further the persons punishment if they commit a hate crime against these people in the states they are protected in.")))
 
 
 # Interactive page 3 - political party (Jiyoon)
