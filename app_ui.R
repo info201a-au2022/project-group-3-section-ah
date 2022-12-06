@@ -65,7 +65,7 @@ interactive_political_party <- tabPanel(
     sidebarPanel(
       selectizeInput(inputId = "party",
                   label = "Political Party Identification",
-                  choices = unique(party_crimerates$party),
+                  choices = list("Republican" = "Republican", "Democrat" = "Democrat"),
                   selected = "Democrat",
                   multiple = FALSE
       )
