@@ -6,11 +6,11 @@
 
 **Authors**
 
-Jiyoon Kim \| jiyoon99@uw.edu
+Jiyoon Kim \| [jiyoon99\@uw.edu](mailto:jiyoon99@uw.edu){.email}
 
-Qiqi Liang \| qiqi2@uw.edu
+Qiqi Liang \| [qiqi2\@uw.edu](mailto:qiqi2@uw.edu){.email}
 
-Michael Cinnamon \| cinnammj@uw.edu
+Michael Cinnamon \| [cinnammj\@uw.edu](mailto:cinnammj@uw.edu){.email}
 
 **Affiliation** INFO-201: Foundational Skills For Data Science - The Information School - University of Washington
 
@@ -71,23 +71,73 @@ The surge of reported hate crime rates, with its connections with oppression and
 
 ## The Dataset
 
--   Table:
+-   **hate_crime data file**
 
-| Data file name                | Purpose                                                                                                                                                                                                                                                                                           | Number of observations               | Number of variables | Citations                                                                                                                                     | URL                                                                                    |
-|------------|------------|------------|------------|------------|------------|
-| hate_crime                    | The purpose of this dataset is to help law enforcement address issues for communities, provide policymakers with justification for legislation, supply the media with credible information, show hate crime victims they are not alone, and help researchers in determining trends in hate crimes | 219577                               | 28                  | Learn about hate crimes. The United States Department of Justice. (2022, June 16). Retrieved October 29, 2022                                 | <https://www.justice.gov/hatecrimes/learn-about-hate-crimes>                           |
-| Arrests by state 2020         | The purpose of this dataset is to hopefully show that the people who committed the hate crimes in 2020 got arrested, we can use the forms of attack (vandalism, assualt, arson, etc.) and the state to cross examine if they got arrested in each state                                           | 102 (2 for each state including D.C) | 35                  | FBI. (n.d.). Federal Bureau of Investigation Crime Data Explorer. Crime. Retrieved October 31, 2022                                           | <https://crime-data-explorer.app.cloud.gov/pages/explorer/crime/arrest>                |
-| Political Party               | The purpose of this dataset is to show the voting outcomes for different US presidential candidates from the years 1976-2020. The dataset allows us to see which political parties were most favored in different states.                                                                         | 4288                                 | 15                  | U.S President 1976-2020. Harvard Dataverse. (n.d.). Retrieved October 31, 2022                                                                | <https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/42MVDX>      |
-| US_Population_2020            | The purpose of this dataset is to check the ratio of hate crimes per population of each state.                                                                                                                                                                                                    | 51                                   | 5                   | Fatimi, S. Q. R. (2022, October 18). *US 2020 Census Data*. Kaggle. Retrieved November 14, 2022                                               | <https://www.kaggle.com/datasets/mafhhdeveloper/us-2020-census-data?resource=download> |
-| Hate Crime Laws in Each State | The purpose of this dataset is to show which states have laws protecting against certain hate crime categories like race, religion, gender, etc.                                                                                                                                                  | 51                                   | 7                   | Hate crime map (no date) ADL. Available at: <https://www.adl.org/resources/tools-to-track-hate/hate-crime-map> (Accessed: November 14, 2022). | <https://www.adl.org/resources/tools-to-track-hate/hate-crime-map>                     |
+    -   The purpose of this dataset is to help law enforcement address issues for communities, provide policymakers with justification for legislation, supply the media with credible information, show hate crime victims they are not alone, and help researchers in determining trends in hate crimes.
 
--   This dataset is from the FBI's Uniform Crime Reporting (UCR) Program. In this program, law enforcements from across the US can submit data about hate crimes. This dataset includes a column causes and motivations for each hate crime data. For example, causes and motivations may include "anti-black" or "anti-religious" reasons. This column can also help us understand whether or not certain laws in different states may prevent specific hate crimes, such as "anti-blackness", or raically motivated hate crimees, and "anti-hispanic", or ethnic hate crimes. Additonally, the demographics of the perpetrator and the victims are recorded per hate crime, which can help answer if minority populations are related to the hate crimes in some way. Additonally, it may help answer whether or not the crime rates relate to political party affiliatons.
+    -   Number of observations: 219577
 
--   The arrests by state dataset are related to our problem domain and specifically the research questions because it can show us how hate crimes are punished on a state-by-state basis. We can see how many people were arrested for each crime in each state in 2020 which enables us to be able see if there is a difference in how many people get arrested in each state. The dataset was collected from the FBI's Uniform Crime Reporting (UCR) Program. The program allowed all the arrests in each state in the year of 2020 to be documented with the amount of arrests of people under the age of 18 and over the age of 18, while also showing the amount of people who committed a certain crime (vandalism, assault, arson, etc.). Because the data was collected by the FBI it is extremely credible and trustworthy and I don't believe that they stand to gain any money from this information.
+    -   Number of variables: 28
 
--   The political party dataset is from Harvard Dataverse. This dataset tells us the voting outcome for presidential candidates from years 1976-2020. This dataset can give us an insight on the favored political party per state. We can combine this dataset with the previous datasets to analyze trends in political party affliliations and rates or types of hate crimes across the country.
+    -   CItation: Learn about hate crimes. The United States Department of Justice. (2022, June 16). Retrieved October 29, 2022.
 
--   The US Population 2020 dataset is from Kaggle. This dataset tells us the population in each state in the U.S. in 2020. This dataset can be helpful in calculating the ratio of hate crimes by state population, so that we can study crime rates more accurately.
+    -   URL: <https://www.justice.gov/hatecrimes/learn-about-hate-crimes>
+
+    -   This dataset is from the FBI's Uniform Crime Reporting (UCR) Program. In this program, law enforcements from across the US can submit data about hate crimes. This dataset includes a column causes and motivations for each hate crime data. For example, causes and motivations may include "anti-black" or "anti-religious" reasons. This column can also help us understand whether or not certain laws in different states may prevent specific hate crimes, such as "anti-blackness", or raically motivated hate crimees, and "anti-hispanic", or ethnic hate crimes. Additonally, the demographics of the perpetrator and the victims are recorded per hate crime, which can help answer if minority populations are related to the hate crimes in some way. Additonally, it may help answer whether or not the crime rates relate to political party affiliatons.
+
+-   **Arrests by state 2020 data file**
+
+    -   The purpose of this dataset is to hopefully show that the people who committed the hate crimes in 2020 got arrested, we can use the forms of attack (vandalism, assualt, arson, etc.) and the state to cross examine if they got arrested in each state.
+
+    -   Number of Observations: 102 (2 for each state including D.C)
+
+    -   Number of Variables: 35
+
+    -   Citation: FBI. (n.d.). Federal Bureau of Investigation Crime Data Explorer. Crime. Retrieved October 31, 2022.
+
+    -   URL: <https://crime-data-explorer.app.cloud.gov/pages/explorer/crime/arrest>
+
+    -   The arrests by state dataset are related to our problem domain and specifically the research questions because it can show us how hate crimes are punished on a state-by-state basis. We can see how many people were arrested for each crime in each state in 2020 which enables us to be able see if there is a difference in how many people get arrested in each state. The dataset was collected from the FBI's Uniform Crime Reporting (UCR) Program. The program allowed all the arrests in each state in the year of 2020 to be documented with the amount of arrests of people under the age of 18 and over the age of 18, while also showing the amount of people who committed a certain crime (vandalism, assault, arson, etc.). Because the data was collected by the FBI it is extremely credible and trustworthy and I don't believe that they stand to gain any money from this information.
+
+-   **Political Party data file**
+
+    -   The purpose of this dataset is to show the voting outcomes for different US presidential candidates from the years 1976-2020. The dataset allows us to see which political parties were most favored in different states.
+
+    -   Number of Observations: 4288
+
+    -   Number of Variables: 15
+
+    -   Citation: U.S President 1976-2020. Harvard Dataverse. (n.d.). Retrieved October 31, 2022.
+
+    -   URL: <https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/42MVDX>
+
+    -   The political party dataset is from Harvard Dataverse. This dataset tells us the voting outcome for presidential candidates from years 1976-2020. This dataset can give us an insight on the favored political party per state. We can combine this dataset with the previous datasets to analyze trends in political party affliliations and rates or types of hate crimes across the country.
+
+-   **US_Population_2020 data file**
+
+    -   The purpose of this dataset is to check the ratio of hate crimes per population of each state.
+
+    -   Number of Observations: 51
+
+    -   Number of Variables: 5
+
+    -   Citation: Fatimi, S. Q. R. (2022, October 18). *US 2020 Census Data*. Kaggle. Retrieved November 14, 2022.
+
+    -   URL: <https://www.kaggle.com/datasets/mafhhdeveloper/us-2020-census-data?resource=download>
+
+    -   The US Population 2020 dataset is from Kaggle. This dataset tells us the population in each state in the U.S. in 2020. This dataset can be helpful in calculating the ratio of hate crimes by state population, so that we can study crime rates more accurately.
+
+-   **Hate Crime Laws in Each State data file**
+
+    -   The purpose of this dataset is to show which states have laws protecting against certain hate crime categories like race, religion, gender, etc.
+
+    -   Number of Observations: 51
+
+    -   Number of Variables: 7
+
+    -   Citation: Hate crime map (no date) ADL. Available at: <https://www.adl.org/resources/tools-to-track-hate/hate-crime-map> (Accessed: November 14, 2022).
+
+    -   URL: <https://www.adl.org/resources/tools-to-track-hate/hate-crime-map>
 
 -   The Hate Crime Laws in each state dataset is from the ADL(Anti-Defamation League). This dataset tells us which states have laws protecting hate crimes, and if not all then which hate crimes it protects, It also has the exact laws listed for each state. We can combine this dataset with the previous datasets to see the trends in which hate crimes are punished or documented in each state, plus D.C.
 
@@ -123,13 +173,17 @@ From discovering the causes and motivations behind hate crimes, we found out tha
 
 From the analysis of hate crime laws in different states, we found out that most states had laws that protect minority groups, even though some laws regarding the LGBTQ+ was dwindling. This finding was important because of the findings mentioned above regarding the crimes and motivations behind hate crimes. We speculated that this could be a reason for the second biggest cause of hate crimes, which was anti-gayness (male). Also, because hate crimes did not have a specific category but were treated as the crime that was committed, we speculated that it could be another reason why hate crimes were experiencing a recent increase.
 
-From the analysis of political party affiliation by each state and hate crime rates, we found out that the political party affiliation by state did not necessarily correspond with hate crime rates. We identified possible factors from this finding; we speculated that the determining factor for this finding could not just rely on state population in general; it could also rely on factors such as black, gay, or jewish population. It could also be that the analysis should examine the population data in detail, such as county-level population data of minority groups.
+From the analysis of political party affiliation by each state and hate crime rates, we found out that the political party affiliation by state did not necessarily correspond with hate crime rates. We identified possible factors from this finding; we speculated that the determining factor for this finding could not just rely on state population in general; it could also rely on factors such as black, gay, or Jewish population. It could also be that the analysis should examine the population data in detail, such as county-level population data of minority groups.
 
 ## Conclusion
 
-Hate crime rates in the U.S. have experienced an increase, and the safety of minority groups is more important than ever. By using multiple datasets such as hate crime occurrences, state laws, presidential voting data, etc., we investigated the causes and motivations behind hate crimes, punishable hate crime laws in different states, and whether the political party affiliation influenced hate crime rates. Black people were the most susceptible to hate crimes and laws were being less protective of the LGBTQ+, even when anti-gayness was the second biggest cause behind hate crimes. While the political party affiliation by state did not necessarily correspond with hate crime rates, we assumed that other factors would affect hate crime rates such as different racial population rates.
+Hate crime rates in the U.S. have experienced an increase, and the safety of minority groups is more important than ever. By using multiple datasets such as hate crime occurrences, state laws, presidential voting data, etc., we investigated the causes and motivations behind hate crimes, punishable hate crime laws in different states, and whether political party affiliation influenced hate crime rates. Black people were the most susceptible to hate crimes and laws were less protective of the LGBTQ+, even when anti-gayness was the second biggest cause behind hate crimes. While the political party affiliation by the state did not necessarily correspond with hate crime rates, we assumed that other factors would affect hate crime rates such as different racial population rates.
 
-It is important to reiterate that "the FBI's annual report vastly understates the real level of hate crimes in the country (The Southern Poverty Law Center, 2020)." The data that we have is only a fraction of what is happening in reality, but even so, it reflects the society on a certain level.
+It is important to reiterate that "the FBI's annual report vastly understates the real level of hate crimes in the country (The Southern Poverty Law Center, 2020)." The data that we have is only a fraction of what is happening in reality, but even so, it reflects society on a certain level. However, there is a reason for this lack of data; more research needs to be done on hate crimes, and society must encourage those who were victims of hate crimes to report the incident for justice and a safer community.
+
+We can also ask ourselves some questions. Considering the causes and motivations of hate crimes, gay people and Jewish people were also communities that were targeted for hate crimes. How are the LGBTQ+ and the Jewish community protesting against hate crimes, when the Black Lives Matter movement was such a huge issue? Considering the hate crime laws observation, why are LGBTQ+ laws in some states dwindling? How does political beliefs affect hate crimes?
+
+Through the observations and analysis that we produced, we hope that more people would actively participate in detering the issue of hate crimes, and that this society would become an equitable and safe place to live in for everyone regardless of their race, sexual orientation, religion, etc.
 
 ------------------------------------------------------------------------
 
@@ -137,7 +191,7 @@ It is important to reiterate that "the FBI's annual report vastly understates th
 
 We would like to thank our TA, Shinji Yamashita, and Professor Winegarden.
 
-### References (APA 7)
+### References
 
 Arango, T. (2020, November 16). *Hate crimes in U.S. rose to highest level in more than a decade in 2019*. The New York Times. Retrieved October 29, 2022, from <https://www.nytimes.com/2020/11/16/us/hate-crime-rate.html> 
 

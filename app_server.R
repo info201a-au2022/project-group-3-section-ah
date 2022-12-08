@@ -75,24 +75,11 @@ server <- function(input, output) {
   # Jiyoon's plot
   output$political_chart <- renderPlotly({
     
-    # Democrat_data <- party_crimerates %>%
-    #   filter(party == "Democrat")
-    # 
-    # Republican_data <- party_crimerates %>%
-    #   filter(party == "Republican") %>%
-    #   na.omit()
-    # 
-    # Democrat <- plot_ly(data = Democrat_data, x = ~crime_ratio, y = ~state, type = 'scatter',
-    #                     mode = "markers", marker = list(color = "blue"))
-    # Republican <- plot_ly(data = Republican_data, x = ~crime_ratio, y = ~state, type = 'scatter',
-    #                       mode = "markers", marker= list(color = "red"))
-    
     plot_ly(party_crimerates, x = ~state, y = ~crime_ratio) %>%
       filter(party == input$party) %>%
       group_by(party) %>%
       add_markers()
-    # if(identical(input$party, "Democrat")) { return(Democrat)}
-    # else { return(Republican) }
+    
   })
   
   # Michael's plot

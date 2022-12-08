@@ -41,7 +41,7 @@ interactive_page <- tabPanel(
 Takeaways <- tabPanel(
   "Key Takeaways",
   h2("The Three Key Takeaways"),
-  p("1.) Although the 50 states party affiliation is 50% Democrat + D.C and 50% Republican, By looking at the chart, we can see that the states that voted for the Republican party is darker, While the states that voted for the Democrats are generally lighter in color which means less hate crime"),
+  p("1.) we found out that the political party affiliation of each state did not necessarily correspond with lower hate crime rates. States that affiliate with the Democratic party had higher hate crime rates, with the District of Columbia, New Jersey, and Vermont being the biggest outliers. On the contrary, states that affiliate with the Republican party had lower hate crime rates in general."),
   
   p("2.) Most states have punishments for Hate crimes, excluding Arkansas, Indiana, South Carolina, and Wyoming. and although most states have laws protecting things such as race, religion, and ethnicity. Some states start to dwindle on Disability, Gender, Sexual Orientation, and most of all Gender Identity."), 
   
