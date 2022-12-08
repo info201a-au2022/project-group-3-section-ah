@@ -74,7 +74,8 @@ interactive_political_party <- tabPanel(
     ),
     mainPanel(
       h3("Political Party Comparison"),
-      p(plotlyOutput(outputId = "political_chart")
+      p(plotlyOutput(outputId = "political_chart"),
+      p("This plot shows the states of the U.S., identifies the political party affiliation of each state, and shows their hate crime rates in percentages (calculated in ratio: hate crime rates divided by total population of each state) in 2020.")
       )
     )
   )
